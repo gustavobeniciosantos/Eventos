@@ -74,7 +74,7 @@ public class MakeEvent {
         write("========EVENTOS FUTUROS========");
 
         for(int i = 0; i < dateArray.size(); i++){
-            boolean isTrue = now.before(dateArray.get(i));
+            boolean isTrue = now.after(dateArray.get(i));
             if(isTrue){
                 write(newArray.get(i)+ " ocorrerá na data " + dateArray.get(i));
             }//if
